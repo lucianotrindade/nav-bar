@@ -1,0 +1,106 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
+/* Variáveis*/
+:root {
+    --fonte-padrao: 'Roboto Slab', serif; 
+ }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: var(--fonte-padrao);
+}
+
+.container-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    background-color: rgb(7, 7, 134);
+    color: white;
+    width: 100%;   
+}
+
+.container-menu label {
+    
+    margin: 20px;
+    font-size: 1.5rem;
+}
+
+.container-menu .menu{
+    display: flex;
+    justify-content: center;
+      
+}
+
+.container-menu ul {
+    display: flex;
+}
+
+.container-menu ul li a {
+    color: white;
+    margin-left: 25px;
+    position: relative;
+}
+
+.container-menu ul li a:hover {
+    color: tomato;
+}
+
+.times, .bars {
+    display: none;
+    width: 15%;
+    justify-content: center;
+    background-color: transparent;
+    color: white;
+    padding:  5px;
+    border:  none;
+}
+.bars:hover {
+    background-color: rgb(22, 22, 207) ;
+}
+
+.times:hover {
+    background-color: rgb(22, 22, 207) ; 
+}
+
+/*580*/
+
+@media (max-width: 563px) {
+ 
+    .container-menu {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .container-menu .menu {
+        display: none;
+        font-size: 1em;
+        color: yellow;
+    }
+  
+    ul{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    li {
+        display: flex;
+        margin-top: 5px;
+    }
+
+    .bars {
+        display: flex;
+        width: 15%;
+        justify-content: center;
+        background-color: transparent;
+    }
+
+}
+    

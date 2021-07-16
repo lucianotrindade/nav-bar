@@ -7,6 +7,6 @@
 .container-main {
     background-image: url(/assest/img/img-home/imagem-principal.jpg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     height: 100vh;
 }

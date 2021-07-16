@@ -22,4 +22,5 @@ times.addEventListener ('click' , function (e) {
     ocultaMenu();
     times.style.display = 'none';
     bars.style.display = 'flex';
+    document.location.reload(true);
 });
